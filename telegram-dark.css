@@ -1,0 +1,33 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("web.telegram.org") {
+  /* Background of the space outside of the app */
+  .page_wrap { background-color: rgb(0, 0, 0); }
+
+  /* Background of the actual message area */
+  .im_page_wrap { background-color: rgb(49, 49, 49); }
+
+  /* The background of individual messages when they are
+   * being selected (e.g. for a reply or forward) */
+  .im_message_outer_wrap:hover { background-color: #575A59; }
+
+  /* The color of all links in the page */
+  a { color: #50bcb6; }
+
+  /* Replace the blue header with a black-ish one */
+  .tg_head_split { background-color: #1a1d20; }
+  .tg_head_btn:hover { background-color: #414244; }
+
+  /* Replace the blue background on tne currently selected chat */
+  .im_dialogs_scrollable_wrap .active a.im_dialog { background-color: #414244; }
+
+  /* the color of the name's on indivdual chats */
+  .im_dialog_peer { color: #ccc; }
+
+  /* The color of the message text */
+  .im_message_text { color: #ccc; }
+
+  /* The borders around different columns of the app */
+  .im_dialogs_col_wrap { border-color: rgb(0, 0, 0); }
+  .im_page_wrap { border-color: rgb(0, 0, 0); }
+}
