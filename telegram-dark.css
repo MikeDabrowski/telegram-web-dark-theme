@@ -11,6 +11,9 @@
    * being selected (e.g. for a reply or forward) */
   .im_message_outer_wrap:hover { background-color: #575A59; }
 
+  /* the background of the active chat when you hover over it */
+  .im_dialogs_scrollable_wrap .active a.im_dialog:hover { background-color: #575A59; }
+
   /* The color of all links in the page */
   a { color: #50bcb6; }
 
