@@ -1,6 +1,9 @@
 @namespace url(http://www.w3.org/1999/xhtml);
 
 @-moz-document domain("web.telegram.org") {
+  /* set the default page text to a light color */
+  body { color: #ccc; }
+
   /* Background of the space outside of the app */
   .page_wrap { background-color: rgb(0, 0, 0); }
 
