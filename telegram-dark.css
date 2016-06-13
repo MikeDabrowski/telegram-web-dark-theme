@@ -1,8 +1,15 @@
 @namespace url(http://www.w3.org/1999/xhtml);
 
 @-moz-document domain("web.telegram.org") {
+  :root {
+    --default-text-color: #ccc;
+  }
+  
   /* set the default page text to a light color */
-  body { color: #ccc; }
+  body { color: var(--default-text-color); }
+
+  /* the color of the name's on the indivdual chats */
+  .im_dialog_peer { color: var(--default-text-color) ; }
 
   /* Background of the space outside of the app */
   .page_wrap { background-color: rgb(0, 0, 0); }
@@ -26,12 +33,6 @@
 
   /* Replace the blue background on the currently selected chat */
   .im_dialogs_scrollable_wrap .active a.im_dialog { background-color: #414244; }
-
-  /* the color of the name's on the indivdual chats */
-  .im_dialog_peer { color: #ccc; }
-
-  /* The color of the message text */
-  .im_message_text { color: #ccc; }
 
   /* The borders around different columns of the app */
   .im_dialogs_col_wrap { border-color: rgb(0, 0, 0); }
