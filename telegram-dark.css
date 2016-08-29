@@ -3,36 +3,48 @@
 @-moz-document domain("web.telegram.org") {
   :root {
     --default-text-color: #ccc;
+    --message-area-background: rgb(49, 49, 49);
+    --message-hover: #575A59;
+    --default-link-color: #50bcb6;
+    --menu-default-color: #1a1d20;
   }
+
+  /****************************************
+   *                     LINKS
+   ****************************************/
+  a { color: var(--default-link-color); }
   
-  /* set the default page text to a light color */
-  body { color: var(--default-text-color); }
+  /****************************************
+   *                     TEXT
+   ****************************************/
+  body { color: var(--default-text-color); } /* default page text */
+  .im_dialog_peer { color: var(--default-text-color) ; }  /* names on the chats */
+  
+  /****************************************
+   *                    MENUS
+   ****************************************/
+    /* Replace the blue header with a black-ish one */
+  .tg_head_split { background-color: var(--menu-default-color); }
+  .tg_head_logo_dropdown > a:nth-child(1) { background-color: var(--menu-default-color); }
+  .tg_head_btn:hover { background-color: #414244; }
 
-  /* the color of the name's on the indivdual chats */
-  .im_dialog_peer { color: var(--default-text-color) ; }
 
-  /* Background of the space outside of the app */
-  .page_wrap { background-color: rgb(0, 0, 0); }
 
-  /* Background of the actual message area */
-  .im_page_wrap { background-color: rgb(49, 49, 49); }
-
+  /****************************************
+   *       AREA BACKGROUNDS
+   ****************************************/
+  .page_wrap { background-color: rgb(0, 0, 0); }  /* space outside of the app */
+  .im_page_wrap { background-color: var(--message-area-background); } /* actual message area */x
+  /* Replace the blue background on the currently selected chat */
+  .im_dialogs_scrollable_wrap .active a.im_dialog { background-color: #414244; }
   /* The background of individual messages when they are
    * being selected (e.g. for a reply or forward) */
-  .im_message_outer_wrap:hover { background-color: #575A59; }
-
+  .im_message_outer_wrap:hover { background-color: var(--message-hover); }
   /* the background of the active chat when you hover over it */
   .im_dialogs_scrollable_wrap .active a.im_dialog:hover { background-color: #575A59; }
 
-  /* The color of all links in the page */
-  a { color: #50bcb6; }
 
-  /* Replace the blue header with a black-ish one */
-  .tg_head_split { background-color: #1a1d20; }
-  .tg_head_btn:hover { background-color: #414244; }
 
-  /* Replace the blue background on the currently selected chat */
-  .im_dialogs_scrollable_wrap .active a.im_dialog { background-color: #414244; }
 
   /* The borders around different columns of the app */
   .im_dialogs_col_wrap { border-color: rgb(0, 0, 0); }
