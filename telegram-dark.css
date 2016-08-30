@@ -38,6 +38,12 @@
   .im_dialogs_col_wrap { border-color: rgb(0, 0, 0); }
   .im_page_wrap { border-color: rgb(0, 0, 0); }
 
+  /* the search box */
+  .im_dialogs_search_field:focus { background-color: #575A59; }
+  .im_dialogs_search_field {
+      border: 1px solid black;
+      background-color: #313131;
+  }
     /* lol, this seems excessive, but base64 encode the Hack font for use */
   @font-face {
     font-family: 'hackbold';
