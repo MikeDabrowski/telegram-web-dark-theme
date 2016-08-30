@@ -20,7 +20,10 @@
   /* The background of individual messages when they are
    * being selected (e.g. for a reply or forward) */
   .im_message_outer_wrap:hover { background-color: #575A59; }
-
+  .im_message_selected .im_message_outer_wrap { background-color: #4d452f; }
+  .im_history_select_active .im_message_outer_wrap:hover { background-color: #575A59; }
+  .im_message_selected .im_message_outer_wrap:hover { background-color: #414244; }
+  
   /* the background of the active chat when you hover over it */
   .im_dialogs_scrollable_wrap .active a.im_dialog:hover { background-color: #575A59; }
 
