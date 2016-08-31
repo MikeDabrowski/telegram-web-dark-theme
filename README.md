@@ -12,5 +12,5 @@ Or you can just look at the screenshot of the dark theme:
 
 [0]:http://web.telegram.org
 [1]:https://userstyles.org
-[2]:https://github.com/astronaut-wannabe/telegram-web-dark-theme/commit/c2024bc7ae30d9511cce6ee707c53864083614c3#diff-23a14ab010017aa83c99ec719033ffe0
+[2]:https://github.com/astronaut-wannabe/telegram-web-dark-theme/commit/324300c7c50b236103825fbb0c2a83cb11a14dc9
 [3]:https://raw.githubusercontent.com/astronaut-wannabe/telegram-web-dark-theme/master/diff.png
