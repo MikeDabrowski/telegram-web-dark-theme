@@ -28,12 +28,17 @@
   .im_dialogs_scrollable_wrap .active a.im_dialog:hover { background-color: #575A59; }
 
   /* The color of all links in the page */
-  a { color: #50bcb6; }
-
+  a, .tg_head_logo_dropdown .dropdown-menu > li > a { color: #50bcb6; }
+  .tg_head_peer_dropdown .dropdown-menu > li > a  { color: #50bcb6; }
+  
   /* Replace the blue header with a black-ish one */
   .tg_head_split { background-color: #1a1d20; }
   .tg_head_btn:hover { background-color: #414244; }
 
+  /* Background on drop-drop menus */
+  .dropdown-menu { background-color: rgb(49, 49, 49); }
+  .dropdown.open .tg_head_btn, .tg_head_btn:hover { background-color: #414244; }
+                                                
   /* Replace the blue background on the currently selected chat */
   .im_dialogs_scrollable_wrap .active a.im_dialog { background-color: #4d452f; }
   .im_dialogs_scrollable_wrap a.im_dialog:hover, .im_dialogs_scrollable_wrap a.im_dialog_selected { background: #414244; }
